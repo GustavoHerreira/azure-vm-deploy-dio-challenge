@@ -69,6 +69,18 @@ Após a confirmação, o Azure provisionou todos os recursos solicitados. A tela
 
 ---
 
+## 🔌 Etapa 4: Acesso Remoto via SSH
+
+Com a máquina virtual em execução no Azure, o passo seguinte foi estabelecer a primeira conexão remota para começar a configuração do ambiente.
+
+Utilizando o terminal (Git Bash) e a chave privada `.pem` gerada durante a criação da VM, a conexão foi estabelecida com sucesso. O screenshot abaixo registra o momento do primeiro login, confirmando que a infraestrutura está 100% online e acessível.
+
+![Conexão SSH bem-sucedida](./images/ssh_connection_established.jpg)
+
+### **Observação sobre Boas Práticas de Segurança:**
+Para fins didáticos e de documentação deste desafio, o endereço de IP público do servidor está exposto na screenshot. **Estou ciente de que, em um cenário corporativo real, esta não seria uma prática recomendada**. O acesso administrativo (SSH) seria protegido por medidas adicionais, como o uso de um *Bastion Host* (Jump Server: ferramenta mencionada pela instrutora durante o Bootcamp) e regras de firewall que restringem o acesso apenas a IPs de origem confiáveis da organização.
+ 
+---
 ## TODO
 
 Com a infraestrutura base (IaaS) configurada e online, os próximos passos serão:
