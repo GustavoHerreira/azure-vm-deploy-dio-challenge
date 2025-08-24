@@ -5,7 +5,7 @@ Este repositório documenta a criação da infraestrutura de computação **(Iaa
 O objetivo deste desafio do **Bootcamp .NET da DIO/GFT** foi aplicar os conhecimentos de nuvem de forma prática. No entanto, a criação desta VM foi apenas o primeiro passo de um projeto muito maior e mais integrado.
 
  ## 🚀 **O projeto final, com a API online, arquitetura detalhada e todo o código-fonte, está no repositório principal:**
- - ### [➡️ Clique aqui para ver a Solução Completa](https://github.com/GustavoHerreira/todoapp-trilha-dotnet-api-desafio)
+ - ### [➡️ Clique aqui para ver a Solução Completa](https://github.com/GustavoHerreira/task-management-api)
 
 ---
 
@@ -60,13 +60,18 @@ A seguir, a documentação visual do provisionamento da Máquina Virtual no Port
 > Para fins didáticos e de documentação, o endereço de IP público do servidor está exposto no screenshot acima. Em um cenário corporativo real, esta não seria uma prática recomendada. O acesso administrativo (SSH) seria protegido por medidas adicionais, como o uso de um *Bastion Host* (ferramenta mencionada pela instrutora durante o Bootcamp) e regras de firewall que restringem o acesso apenas a IPs de origem confiáveis.
 ---
 
-## 👉 Próximo Passo: O Projeto Real
+## 👉 Próximo Passo: A Evolução para uma Arquitetura Serverless
 
-A criação desta VM foi a fundação. Para ver como esta infraestrutura foi de fato utilizada para:
-* Instalar e configurar o **Docker**.
-* Fazer o deploy de uma **API .NET containerizada**.
-* Conectar-se de forma segura a um **Banco de Dados PaaS** dentro da mesma rede privada.
+A criação desta Máquina Virtual foi a **fundação original** do projeto, cumprindo os requisitos do desafio com uma arquitetura IaaS (Infraestrutura como Serviço). Este foi o ambiente onde a primeira versão da API foi implantada e validada.
 
-**Visite o repositório principal do projeto!**
+No entanto, o projeto evoluiu. Em busca de maior eficiência, escalabilidade e otimização de custos, a aplicação **migrou desta VM para uma plataforma moderna e serverless: o Azure Container Apps (ACA)**.
 
-### [➡️ Ver o Projeto Completo e a API em Produção](https://github.com/GustavoHerreira/todoapp-trilha-dotnet-api-desafio)
+Para entender a jornada completa e ver a arquitetura final, visite o repositório principal. Lá você encontrará:
+
+* A nova arquitetura detalhada com **`Azure Container Apps`**.
+* O código-fonte completo da API .NET.
+* A história documentada da migração, que teve esta VM como ponto de partida.
+
+**Visite o repositório principal para ver a solução final e a API em produção!**
+
+### [➡️ Ver o Projeto Completo (Nova Arquitetura com Azure Container Apps)](https://github.com/GustavoHerreira/task-management-api)
